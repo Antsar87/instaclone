@@ -1,0 +1,118 @@
+:root {
+  --c-black: #000;
+  --c-black-2: #121212;
+  --c-black-3: #393939;
+
+  --gray: #858585;
+
+  --blue: #0098fd;
+  --blue-dark: #004c7f;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+.container {
+  max-width: 812px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.g-5 {
+  gap: 5px;
+}
+
+.pT-20 {
+  padding-top: 20px;
+}
+
+.mT-10 {
+  margin-top: 10px;
+}
+
+.mT-30 {
+  margin-top: 30px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-end {
+  text-align: end;
+}
+
+.bg-blue {
+  color: var(--gray);
+  background: var(--blue-dark);
+}
+
+.c-blue {
+  color: var(--blue);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+/* utilities */
+
+body {
+  background: var(--c-black);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 15px;
+}
+
+.logIn {
+  height: 100vh;
+}
+
+.logIn .box input {
+  display: block;
+  border: var(--c-black-3) 1px solid;
+  background: transparent;
+  color: var(--gray);
+  height: 41px;
+  padding: 0 10px;
+}
+
+.logIn .box input::placeholder {
+  color: var(--gray);
+  font-size: 12px;
+}
+
+.logIn .box input:focus {
+  outline: none;
+}
+
+.logIn .box a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+}
