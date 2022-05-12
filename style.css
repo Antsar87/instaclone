@@ -83,7 +83,6 @@
 
 body {
   background: var(--c-black);
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   padding: 0 15px;
 }
@@ -108,6 +107,11 @@ body {
 
 .logIn .box input:focus {
   outline: none;
+}
+
+.logIn .box .password {
+    font-size: 30px;
+    letter-spacing: 5px;
 }
 
 .logIn .box a {
