@@ -1,12 +1,17 @@
 :root {
+  --white: #fff;
+
   --c-black: #000;
   --c-black-2: #121212;
   --c-black-3: #393939;
 
   --gray: #858585;
+  --gray-1: #8a8a90;
+  --gray-3: #85858a;
 
   --blue: #0098fd;
   --blue-dark: #004c7f;
+  --blue-dark-1: #007aff;
 }
 
 *,
@@ -19,8 +24,16 @@
 
 /* utilities */
 .container {
-  max-width: 812px;
+  max-width: 375px;
   margin: 0 auto;
+}
+
+.txt-decoration-none {
+  text-decoration: none;
+}
+
+.line-height-19 {
+  line-height: 19px;
 }
 
 .d-flex {
@@ -39,8 +52,20 @@
   gap: 5px;
 }
 
+.g-10{
+  gap: 10px;
+}
+
 .pT-20 {
   padding-top: 20px;
+}
+
+.pR-40 {
+  padding-right: 40px;
+}
+
+.mT-4 {
+  margin-top: 4px;
 }
 
 .mT-10 {
@@ -49,6 +74,14 @@
 
 .mT-30 {
   margin-top: 30px;
+}
+
+.mY-30 {
+  margin: 30px 0;
+}
+
+.mL-auto {
+  margin-left: auto;
 }
 
 .w-100 {
@@ -72,6 +105,22 @@
   color: var(--blue);
 }
 
+.c-blue-dark-1 {
+  color: var(--blue-dark-1);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-gray-1 {
+  color: var(--gray-1);
+}
+
+.c-gray-3 {
+  color: var(--gray-3);
+}
+
 .fw-300 {
   font-weight: 300;
 }
@@ -79,6 +128,23 @@
 .fw-500 {
   font-weight: 500;
 }
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
 /* utilities */
 
 body {
@@ -110,8 +176,8 @@ body {
 }
 
 .logIn .box .password {
-    font-size: 30px;
-    letter-spacing: 5px;
+  font-size: 30px;
+  letter-spacing: 5px;
 }
 
 .logIn .box a {
@@ -119,4 +185,50 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
+}
+
+/* log in */
+
+/* privacy */
+.privacy .box {
+  border-bottom: 1px solid var(--gray-1);
+  padding-bottom: 20px;
+}
+
+/* toggle in label designing */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 28px;
+  background-color: #262629;
+  border-radius: 30px;
+}
+
+/* After slide changes */
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 24.9px;
+  height: 24.9px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+  left: 20px;
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: var(--blue);
+}
+
+/* Checkbox vanished */
+.checkbox {
+  display: none;
 }
