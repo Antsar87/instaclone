@@ -40,8 +40,13 @@
   display: flex;
 }
 
+
 .justify-content-end {
   justify-content: flex-end;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
 }
 
 .align-center {
@@ -78,6 +83,10 @@
 
 .mY-30 {
   margin: 30px 0;
+}
+
+.mL-50 {
+  margin-left: 50px;
 }
 
 .mL-auto {
@@ -231,4 +240,10 @@ body {
 /* Checkbox vanished */
 .checkbox {
   display: none;
+}
+
+
+.card .buttonImages img {
+  height: 30px;
+  width: 30px;
 }
