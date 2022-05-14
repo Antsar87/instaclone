@@ -61,12 +61,21 @@
   gap: 10px;
 }
 
+.g-20{
+  gap: 20px;
+}
+
+
 .pT-20 {
   padding-top: 20px;
 }
 
 .pR-40 {
   padding-right: 40px;
+}
+
+.pY-20 {
+  padding: 20px 0;
 }
 
 .mT-4 {
@@ -154,6 +163,9 @@
   font-size: 30px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
 /* utilities */
 
 body {
