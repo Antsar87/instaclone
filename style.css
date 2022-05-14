@@ -115,6 +115,11 @@
 }
 
 .bg-blue {
+  color: black;
+  background: #0C84D6;
+}
+
+.bg-blue:hover {
   color: var(--gray);
   background: var(--blue-dark);
 }
